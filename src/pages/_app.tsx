@@ -9,6 +9,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import Loader from "@/components/common/Loader";
 
+import banner from "@/assets/banner/banner.jpeg";
+import Image from "next/image";
+
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
 };
@@ -32,7 +35,17 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Body Section */}
-      {getLayout(<Component {...pageProps} />)}
+      <div className="relative">
+        <Image
+          src={banner.src}
+          width={banner.width}
+          height={banner.height}
+          priority
+          className="fixed w-full h-full object-cover z-0"
+          alt="Banner-fixed-image"
+        />
+        {getLayout(<Component {...pageProps} />)}
+      </div>
     </>
   );
 }
