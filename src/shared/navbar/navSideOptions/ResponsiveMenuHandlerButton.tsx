@@ -28,7 +28,7 @@ const ResponsiveMenuHandlerButton = ({
         },
         display: {
           xs: "block",
-          // lg: "none",
+          lg: "none",
         },
         width: 26,
         height: 20,

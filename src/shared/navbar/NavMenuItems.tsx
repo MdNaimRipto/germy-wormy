@@ -1,7 +1,7 @@
 import { UseCommonImports } from "@/utils/UseCommonImports";
 import Link from "next/link";
 import React from "react";
-import logo from "@/assets/logo-bg-none.png";
+import logo from "@/assets/logo.webp";
 import Image from "next/image";
 import CloseMenuIcon from "@mui/icons-material/CloseRounded";
 import { IconButton } from "@mui/material";
@@ -27,19 +27,29 @@ const NavMenuItems = ({
       opacityDelay: ".4s",
     },
     {
-      item: "Blog",
-      path: "/blog",
+      item: "About",
+      path: "",
       opacityDelay: ".7s",
     },
     {
-      item: "Our Meals",
-      path: "/menu",
+      item: "Tokenomics",
+      path: "",
       opacityDelay: ".5s",
     },
     {
-      item: "Plans & Packages",
-      path: "/plansAndPackages",
+      item: "How to Buy",
+      path: "",
       opacityDelay: ".6s",
+    },
+    {
+      item: "FAQ",
+      path: "",
+      opacityDelay: ".7s",
+    },
+    {
+      item: "Connect",
+      path: "",
+      opacityDelay: ".8s",
     },
   ];
 
@@ -51,18 +61,8 @@ const NavMenuItems = ({
           : "-left-[1000px] w-0 h-0 xl:h-[80px] xl:w-full"
       } duration-700 ease-in-out`}
     >
-      <div className="flex xl:hidden items-start justify-between w-full pr-5 mb-3">
+      <div className="flex xl:hidden items-center justify-between w-full pr-5 mb-3">
         <div></div>
-        <Link href="/" onClick={() => setIsNavOpen(false)}>
-          <Image
-            src={logo.src}
-            width={400}
-            height={400}
-            className="w-[170px]"
-            alt="Logo"
-            priority
-          />
-        </Link>
         <IconButton
           onClick={() => setIsNavOpen(!isNavOpen)}
           sx={{
@@ -74,7 +74,7 @@ const NavMenuItems = ({
             },
           }}
         >
-          <CloseMenuIcon />
+          <CloseMenuIcon sx={{ fontSize: 36 }} />
         </IconButton>
       </div>
       {menuItems.map((menu, i) => (
@@ -86,10 +86,10 @@ const NavMenuItems = ({
             !isScrolled && isHomePage
               ? "text-black xl:text-white"
               : "text-black xl:text-black"
-          } text-base xl:text-sm h-[55px] xl:h-full duration-300`}
+          } text-base h-[55px] xl:h-full duration-300`}
         >
           <li
-            className={`titleFont font-medium whitespace-nowrap h-[40px] leading-[55px] xl:h-[50px] xl:leading-[80px] ${
+            className={`titleFont font-semibold whitespace-nowrap h-[40px] leading-[55px] xl:h-[50px] xl:leading-[80px] ${
               Router.pathname === menu?.path && "text-primary"
             } ${
               isNavOpen

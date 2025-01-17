@@ -2,16 +2,33 @@ import Link from "next/link";
 
 const FooterMenu = () => {
   const menuData = [
-    { title: "Home", link: "/" },
-    { title: "Our meals", link: "/menu" },
-    { title: "Plans & subscriptions", link: "/plansAndPackages" },
-    { title: "Consultations", link: "/consultations" },
-    // { title: "Partnerships", link: "/partnerships" },
-    // { title: "Our community", link: "/our-community" },
-    { title: "Blog", link: "/blog" },
+    {
+      title: "Home",
+      link: "/",
+    },
+    {
+      title: "About",
+      link: "",
+    },
+    {
+      title: "Tokenomics",
+      link: "",
+    },
+    {
+      title: "How to Buy",
+      link: "",
+    },
+    {
+      title: "FAQ",
+      link: "",
+    },
+    {
+      title: "Connect",
+      link: "",
+    },
   ];
   return (
-    <div className="col-span-2 order-2 flex flex-col md:flex-row flex-wrap items-center justify-end lg:justify-center gap-6 py-8">
+    <div className="col-span-2 flex flex-col md:flex-row flex-wrap titles-center justify-end lg:justify-center gap-6 py-8">
       {menuData.map((data, index) => (
         <Link
           key={index}

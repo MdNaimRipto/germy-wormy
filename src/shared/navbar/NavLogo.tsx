@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/assets/my-target-logo.png";
+import logo from "@/assets/logo.webp";
 import Link from "next/link";
 
 const NavLogo = ({
@@ -11,9 +11,12 @@ const NavLogo = ({
   isHomePage: boolean;
 }) => {
   return (
-    <Link href={"/"} className="w-[60%] md:w-[50%] xl:w-[20%]">
+    <Link
+      href={"/"}
+      className="w-[60%] md:w-[50%] xl:w-[20%] overflow-hidden h-[150px] xl:h-[70px]"
+    >
       <Image
-        className=""
+        className="w-full h-full object-contain"
         src={logo}
         alt="Navbar-logo"
         // width={160}

@@ -3,6 +3,7 @@ import ResponsiveMenuHandlerButton from "./ResponsiveMenuHandlerButton";
 import { Button } from "@mui/material";
 import { colorConfig } from "@/configs/colorConfig";
 import Link from "next/link";
+import SocialLinks from "../SocialLinks";
 
 const NavSideOptions = ({
   isNavOpen,
@@ -19,7 +20,7 @@ const NavSideOptions = ({
 }) => {
   return (
     <div className="flex items-center gap-4 justify-end w-full md:w-[70%] xl:w-auto">
-      <Link href="/auth/login">
+      <Link href="">
         <Button
           variant="outlined"
           sx={{
@@ -47,9 +48,12 @@ const NavSideOptions = ({
             },
           }}
         >
-          Login
+          Buy Germy Wormy
         </Button>
       </Link>
+      <div className="hidden lg:block">
+        <SocialLinks isScrolled={isScrolled} isHomePage={isHomePage} />
+      </div>
       <ResponsiveMenuHandlerButton
         isNavOpen={isNavOpen}
         setIsNavOpen={setIsNavOpen}
