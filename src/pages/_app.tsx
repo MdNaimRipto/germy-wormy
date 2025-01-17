@@ -36,14 +36,25 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       </Head>
       {/* Body Section */}
       <div className="relative">
-        <Image
+        {/* <Image
           src={banner.src}
           width={banner.width}
           height={banner.height}
           priority
           className="fixed w-full h-full object-cover z-0"
           alt="Banner-fixed-image"
-        />
+        /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          width={500}
+          height={500}
+          className="fixed w-full h-full object-cover z-0"
+        >
+          <source src="background.mp4" type="video/mp4" />
+        </video>
         {getLayout(<Component {...pageProps} />)}
       </div>
     </>

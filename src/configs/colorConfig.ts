@@ -1,7 +1,7 @@
 import { dark } from "@mui/material/styles/createPalette";
 
 export const colorConfig = {
-  primary: "",
+  primary: "#61BB46",
   secondary: "#F0F0F0",
   green: "#6FCF97",
   blue: "#56CCF2",

@@ -40,7 +40,7 @@ const FAQ = () => {
     <OnScrollAnimation>
       <div className="bg-white w-full relative z-20 py-10">
         <div className="container customLeftRightPadding">
-          <h3 className="titleFont capitalize text-center text-3xl md:text-4xl font-semibold tracking-wider mb-4 md:mb-10">
+          <h3 className="titleFont capitalize text-primary text-center text-3xl md:text-4xl font-semibold tracking-wider mb-4 md:mb-10">
             Frequently asked questions
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4">
