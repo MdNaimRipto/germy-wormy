@@ -3,7 +3,6 @@ import NavLogo from "./NavLogo";
 import NavMenuItems from "./NavMenuItems";
 import NavSideOptions from "./navSideOptions/NavSideOptions";
 import { UseCommonImports } from "@/utils/UseCommonImports";
-import NavSideMenu from "./NavSideMenu";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -33,13 +32,11 @@ const Navbar = () => {
   const isHomePage = Router.pathname === "/";
 
   return (
-    <div
-      className={`fixed z-50 top-0 left-0 w-full ${
-        isHomePage && !isScrolled ? "bg-[#00000000]" : "bg-white"
-      } duration-700 pb-[2px]`}
-    >
+    <div className={`fixed z-50 xl:top-5 left-0 w-full pb-[2px] h-[80px]`}>
       <div
-        className={`h-[80px] container px-4 flex items-center justify-between`}
+        className={`h-[80px] container px-8 flex items-center justify-between ${
+          isHomePage && !isScrolled ? "bg-[#00000000]" : "bg-white"
+        } duration-700 xl:rounded-full`}
       >
         <div className="flex items-center gap-5">
           <NavLogo isScrolled={isScrolled} isHomePage={isHomePage} />
@@ -59,18 +56,13 @@ const Navbar = () => {
           isHomePage={isHomePage}
           togglerRef={togglerRef}
         />
-        {/* <div className="block xl:hidden">
-          <NavMenuItems
-            isNavOpen={isNavOpen}
-            setIsNavOpen={setIsNavOpen}
-            isScrolled={isScrolled}
-            isHomePage={isHomePage}
-          />
-        </div> */}
-        <NavSideMenu
+      </div>
+      <div className="block xl:hidden">
+        <NavMenuItems
           isNavOpen={isNavOpen}
           setIsNavOpen={setIsNavOpen}
-          togglerRef={togglerRef}
+          isScrolled={isScrolled}
+          isHomePage={isHomePage}
         />
       </div>
     </div>
