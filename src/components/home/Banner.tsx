@@ -1,12 +1,13 @@
 import React from "react";
 import OpacityTransition from "../animation/OpacityTransition";
+import card from "@/assets/space-bg.png";
 
 const Banner = () => {
   return (
     <div className="w-full h-screen relative z-10">
       <video
-        // poster={card.img}
-        src="/videos/banner.mp4"
+        poster={card.src}
+        src="https://germy-wormy-five.vercel.app/videos/banner.mp4"
         autoPlay
         loop
         muted
