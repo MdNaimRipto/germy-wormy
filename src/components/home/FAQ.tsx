@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
 import germyImg from "@/assets/germy/Germy Wormy.png";
 import OnScrollAnimation from "../animation/OnScrollAnimation";
+import OpacityTransition from "../animation/OpacityTransition";
 
 const FAQ = () => {
   const faqData = [
@@ -38,15 +39,17 @@ const FAQ = () => {
   ];
   return (
     <OnScrollAnimation>
-      <div className="bg-white w-full relative z-20 py-10">
+      <div className="bg-white w-full relative z-20 py-24">
         <div className="container customLeftRightPadding">
           <h3 className="titleFont capitalize text-primary text-center text-3xl md:text-4xl font-semibold tracking-wider mb-4 md:mb-10">
             Frequently asked questions
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4">
-            <div className="w-[80%] hidden lg:block">
-              <Image src={germyImg} alt="" />
-            </div>
+            <OnScrollAnimation>
+              <div className="w-[80%] hidden lg:block">
+                <Image src={germyImg} alt="" />
+              </div>
+            </OnScrollAnimation>
             <div className="flex flex-col gap-4">
               {faqData.map((data, index) => (
                 <Accordion key={index} defaultExpanded={index === 0}>

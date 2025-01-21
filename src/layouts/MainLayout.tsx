@@ -11,7 +11,7 @@ const MainLayout = ({ children }: { children: ReactElement }) => {
   return (
     <div>
       <Navbar />
-      <main className="min-h-screen z-20 bg-white pb-16 rounded-[8.20513px]">
+      <main className="min-h-screen z-20 bg-white rounded-[8.20513px]">
         {children}
       </main>
       <Footer />

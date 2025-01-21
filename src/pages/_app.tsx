@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import Loader from "@/components/common/Loader";
 
-import banner from "@/assets/banner/banner.jpeg";
+import banner from "@/assets/space-bg.png";
 import Image from "next/image";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -36,15 +36,15 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       </Head>
       {/* Body Section */}
       <div className="relative">
-        {/* <Image
+        <Image
           src={banner.src}
           width={banner.width}
           height={banner.height}
           priority
           className="fixed w-full h-full object-cover z-0"
           alt="Banner-fixed-image"
-        /> */}
-        <video
+        />
+        {/* <video
           autoPlay
           loop
           muted
@@ -54,7 +54,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           className="fixed w-full h-full object-cover z-0"
         >
           <source src="background.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         {getLayout(<Component {...pageProps} />)}
       </div>
     </>

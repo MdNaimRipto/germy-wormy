@@ -33,7 +33,7 @@ const FooterMenu = () => {
         <Link
           key={index}
           href={data.link}
-          className="hover:text-primary font-medium"
+          className="hover:text-primary font-semibold titleFont"
         >
           {data.title}
         </Link>

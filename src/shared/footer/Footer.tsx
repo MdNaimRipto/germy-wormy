@@ -18,14 +18,22 @@ const Footer = () => {
         <Divider sx={{ background: `#ffffff33`, my: 5 }} />
         <div className="flex flex-col md:flex-row  items-center justify-between gap-6">
           <div className="flex items-center justify-center gap-6">
-            <Link href={"/"} className="hover:text-primary font-medium">
+            <Link
+              href={"/"}
+              className="hover:text-primary font-medium titleFont"
+            >
               Terms and conditions
             </Link>
-            <Link href={"/"} className="hover:text-primary font-medium">
+            <Link
+              href={"/"}
+              className="hover:text-primary font-medium titleFont"
+            >
               Privacy policy
             </Link>
           </div>
-          <p className="text-center capitalize">© Germy Wormy inc2025.</p>
+          <p className="text-center capitalize titleFont">
+            © Germy Wormy inc2025.
+          </p>
         </div>
       </div>
     </div>

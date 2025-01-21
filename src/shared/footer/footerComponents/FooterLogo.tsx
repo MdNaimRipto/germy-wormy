@@ -9,7 +9,7 @@ const FooterLogo = () => {
         <Image src={caloLogo} alt="Play-Store" priority />
       </div>
 
-      <h2 className="text-base font-semibold">
+      <h2 className="text-base font-semibold titleFont">
         Spreading like germs, wiggling to the moon!
       </h2>
       <hr className="w-full text-[#ffffff33] md:hidden mt-6" />
