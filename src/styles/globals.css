@@ -36,6 +36,35 @@
   font-style: normal;
 }
 
+@keyframes moveRocket {
+  0% {
+    transform: translate(-30px, 50px) scale(0.5) rotate(-10deg);
+  }
+  50% {
+    transform: translate(30%, -20%) scale(0.55) rotate(-50deg);
+  }
+  100% {
+    transform: translate(22%, -30%) scale(0.6) rotate(-65deg);
+  }
+}
+
+.rocket-animation {
+  animation: moveRocket 20s linear forwards;
+}
+
+@keyframes spinRocket {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rocket-spin {
+  animation: spinRocket 5s linear infinite;
+}
+
 .css-1808mag-MuiPaper-root-MuiAccordion-root.Mui-expanded {
   margin: 0 !important;
 }

@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import Loader from "@/components/common/Loader";
 
-import banner from "@/assets/space-bg.png";
+import banner from "@/assets/web-bg.jpg";
 import Image from "next/image";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
