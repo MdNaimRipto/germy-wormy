@@ -1,4 +1,6 @@
+import Image from "next/image";
 import OnScrollAnimation from "../animation/OnScrollAnimation";
+import rocket from "@/assets/rocket-germ.png";
 
 const Buy = () => {
   const buyData = [
@@ -29,9 +31,18 @@ const Buy = () => {
   ];
   return (
     <OnScrollAnimation>
-      <div className="container customLeftRightPadding relative z-20 py-20 ">
+      <div className="container relative z-20 py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div></div>
+          <div className="hidden md:block w-full h-full overflow-hidden">
+            <Image
+              src={rocket.src}
+              alt="Rocket"
+              width={rocket.width}
+              height={rocket.height}
+              priority
+              className="w-full h-full object-contain rocket-spin"
+            />
+          </div>
           <div>
             {buyData.map((data, index) => (
               <div key={index} className="text-white flex items-center gap-4">

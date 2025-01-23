@@ -36,7 +36,7 @@ const Navbar = () => {
       <div
         className={`h-[80px] container px-8 flex items-center justify-between ${
           isHomePage && !isScrolled ? "bg-[#00000000]" : "bg-white"
-        } duration-700 xl:rounded-full`}
+        } duration-700 xl:rounded-full shadow-lg`}
       >
         <div className="flex items-center gap-5">
           <NavLogo isScrolled={isScrolled} isHomePage={isHomePage} />
