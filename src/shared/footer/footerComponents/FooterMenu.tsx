@@ -28,7 +28,7 @@ const FooterMenu = () => {
     },
   ];
   return (
-    <div className="col-span-2 flex flex-col md:flex-row flex-wrap titles-center justify-end lg:justify-center gap-6 py-8">
+    <div className="col-span-2 flex flex-col md:flex-row flex-wrap titles-center justify-end lg:justify-center gap-6 py-8 px-4">
       {menuData.map((data, index) => (
         <Link
           key={index}

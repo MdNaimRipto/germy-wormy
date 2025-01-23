@@ -8,7 +8,7 @@ import FooterLogo from "./footerComponents/FooterLogo";
 
 const Footer = () => {
   return (
-    <div className={`w-full relative z-20 bg-[#222] text-white`}>
+    <div className={`w-full relative z-20 bg-[#222] text-white px-4`}>
       <div className="container pt-16 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-4 items-center justify-center">
           <FooterLogo />

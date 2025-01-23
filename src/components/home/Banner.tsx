@@ -7,7 +7,7 @@ import moon from "@/assets/moon.png";
 
 const Banner = () => {
   return (
-    <div className="w-full h-screen relative z-10">
+    <div className="w-full h-screen relative z-10 overflow-hidden">
       <Image
         src={banner.src}
         alt="Web banner"
@@ -17,15 +17,31 @@ const Banner = () => {
         className="absolute w-full h-full object-cover z-0 brightness-50"
       />
       <OpacityTransition>
-        <div className="relative z-10 w-full container md:grid grid-cols-2 items-center justify-items-center h-full pt-0 md:pt-[50px] lg:pt-16">
-          <div className="w-full px-4 md:px-0">
-            <h2 className="text-center md:text-start text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[40px] md:leading-[50px] lg:leading-[65px] xl:leading-[80px] text-white font-bold">
+        <div className="relative z-10 w-full container grid lg:grid-cols-2 items-center justify-items-center h-full pt-0 md:pt-[50px] lg:pt-16">
+          <Image
+            src={rocket.src}
+            alt="Rocket"
+            width={rocket.width}
+            height={rocket.height}
+            priority
+            className="w-full h-auto object-contain absolute -left-24 md:-left-64 bottom-10 -rotate-45 md:-rotate-[30deg] z-0 md:brightness-50 lg:hidden"
+          />
+          <Image
+            src={moon.src}
+            alt="moon"
+            width={moon.width}
+            height={moon.height}
+            priority
+            className="w-3/5 h-auto object-contain absolute -right-16 md:-right-36 top-10 z-0 md:brightness-90 lg:hidden"
+          />
+          <div className="w-full px-4 relative z-10">
+            <h2 className="text-center lg:text-start text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[40px] md:leading-[50px] lg:leading-[65px] xl:leading-[80px] text-white font-bold">
               Welcome to Germy Wormy – The Wiggliest Meme Token on Solana!
             </h2>
-            <p className="text-center md:text-start mt-5 text-white text-3xl">
+            <p className="text-center lg:text-start mt-5 text-white xl:text-3xl">
               {`Spreading like germs, wiggling to the moon!`}
             </p>
-            <p className="text-center md:text-start mt-5 text-white text-lg leading-9 font-light">
+            <p className="text-center lg:text-start mt-5 text-white text-sm md:text-lg leading-7 lg:leading-9 font-light">
               {`Spreading like germs, wiggling to the moon! Germy Wormy is here to
               bring fun, humor, and a dash of craziness to the world of crypto.
               Built on the Solana blockchain, this meme token isn’t just about
@@ -35,7 +51,7 @@ const Banner = () => {
               Germy Wormy is your ticket to the wiggle revolution!`}
             </p>
           </div>
-          <div className="hidden md:block w-full h-full overflow-hidden relative">
+          <div className="hidden lg:block w-full h-full overflow-hidden relative">
             <Image
               src={rocket.src}
               alt="Rocket"
