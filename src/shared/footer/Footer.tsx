@@ -9,13 +9,13 @@ import FooterLogo from "./footerComponents/FooterLogo";
 const Footer = () => {
   return (
     <div className={`w-full relative z-20 bg-[#222] text-white`}>
-      <div className="container pt-16 pb-8">
+      <div className="container pt-16 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-4 items-center justify-center">
           <FooterLogo />
           <FooterMenu />
           <FooterSocial iconColor={colorConfig.white} />
         </div>
-        <Divider sx={{ background: `#ffffff33`, my: 5 }} />
+        {/* <Divider sx={{ background: `#ffffff33`, my: 5 }} />
         <div className="flex flex-col md:flex-row  items-center justify-between gap-6">
           <div className="flex items-center justify-center gap-6">
             <Link
@@ -34,7 +34,7 @@ const Footer = () => {
           <p className="text-center capitalize titleFont">
             © Germy Wormy inc2025.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

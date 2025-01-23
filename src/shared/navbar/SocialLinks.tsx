@@ -42,7 +42,7 @@ const SocialLinks = ({
     <div className="flex items-center gap-4">
       {socialLinks.map((s, i) => (
         <Link key={i} href={s.path}>
-          <s.icon className="rounded-full bg-white p-2 text-4xl" />
+          <s.icon className="rounded-full bg-white p-2 text-4xl text-primary" />
         </Link>
       ))}
     </div>
