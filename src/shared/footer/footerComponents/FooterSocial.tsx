@@ -33,16 +33,20 @@ const FooterSocial = ({ iconColor }: { iconColor: string }) => {
     },
   ];
   return (
-    <div
-      className={`flex gap-4 items-center justify-center md:justify-end lg:justify-start`}
-    >
+    <div className={`flex gap-4 items-center justify-center lg:justify-start`}>
       {options.map((o, i) => (
         <IconButton
           key={i}
           sx={{
             color: iconColor,
-            width: "40px",
-            height: "40px",
+            width: {
+              xs: "30px",
+              lg: "40px",
+            },
+            height: {
+              xs: "30px",
+              lg: "40px",
+            },
             border: "1px solid #ffffff80",
             transition: ".5s",
             "&:hover": {

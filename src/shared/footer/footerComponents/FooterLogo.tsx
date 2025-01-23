@@ -4,7 +4,7 @@ import caloLogo from "@/assets/logo.webp";
 
 const FooterLogo = () => {
   return (
-    <div className="flex flex-col items-center md:items-start gap-4">
+    <div className="flex flex-col items-center lg:items-start gap-4">
       <div className="w-[60%] md:w-[30%] lg:w-[50%]">
         <Image src={caloLogo} alt="Play-Store" priority />
       </div>
