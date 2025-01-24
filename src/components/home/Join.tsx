@@ -12,28 +12,31 @@ const Join = () => {
   const socialLinks = [
     {
       icon: FaXTwitter,
-      path: "",
+      path: "https://x.com/thegermywormy",
     },
     {
       icon: FaInstagram,
-      path: "",
+      path: "https://www.instagram.com/thegermywormy/",
     },
     {
       icon: FaDiscord,
-      path: "",
+      path: "https://discord.com/channels/1317237924374249543/1317237925427024055",
     },
     {
       icon: FaFacebookF,
-      path: "",
+      path: "https://www.facebook.com/GermyWormy",
     },
     {
       icon: FaTiktok,
-      path: "",
+      path: "https://www.tiktok.com/@thegermywormy",
     },
   ];
   return (
     <OnScrollAnimation>
-      <div className="customLeftRightPadding relative z-20 text-center">
+      <div
+        className="customLeftRightPadding relative z-20 text-center"
+        id="connect"
+      >
         <div className="container flex flex-col gap-6 py-20">
           <h3 className="titleFont capitalize text-center text-primary text-3xl md:text-4xl font-semibold tracking-wider">
             Join the Wiggle Revolution!
@@ -44,7 +47,7 @@ const Join = () => {
           </p>
           <div className="flex justify-center items-center gap-4 mt-4">
             {socialLinks.map((s, i) => (
-              <Link key={i} href={s.path}>
+              <Link key={i} href={s.path} target="_blank">
                 <s.icon className="rounded-full bg-white text-primary hover:bg-primary hover:text-white p-2 text-4xl" />
               </Link>
             ))}

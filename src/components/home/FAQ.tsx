@@ -38,7 +38,7 @@ const FAQ = () => {
     },
   ];
   return (
-    <div className="bg-white w-full relative z-20 py-24">
+    <div className="bg-white w-full relative z-20 py-24" id="faq">
       <OnScrollAnimation>
         <div className="container customLeftRightPadding">
           <h3 className="titleFont capitalize text-primary text-center text-3xl md:text-4xl font-semibold tracking-wider mb-4 md:mb-10">

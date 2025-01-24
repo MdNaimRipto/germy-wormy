@@ -13,51 +13,52 @@ const FooterSocial = ({ iconColor }: { iconColor: string }) => {
   const options = [
     {
       icon: FaXTwitter,
-      path: "",
+      path: "https://x.com/thegermywormy",
     },
     {
       icon: FaInstagram,
-      path: "",
+      path: "https://www.instagram.com/thegermywormy/",
     },
     {
       icon: FaDiscord,
-      path: "",
+      path: "https://discord.com/channels/1317237924374249543/1317237925427024055",
     },
     {
       icon: FaFacebookF,
-      path: "",
+      path: "https://www.facebook.com/GermyWormy",
     },
     {
       icon: FaTiktok,
-      path: "",
+      path: "https://www.tiktok.com/@thegermywormy",
     },
   ];
   return (
     <div className={`flex gap-4 items-center justify-center lg:justify-start`}>
       {options.map((o, i) => (
-        <IconButton
-          key={i}
-          sx={{
-            color: iconColor,
-            width: {
-              xs: "30px",
-              lg: "40px",
-            },
-            height: {
-              xs: "30px",
-              lg: "40px",
-            },
-            border: "1px solid #ffffff80",
-            transition: ".5s",
-            "&:hover": {
-              backgroundColor: colorConfig.primary,
-              border: "none",
-            },
-          }}
-        >
-          {" "}
-          <o.icon size={16} />
-        </IconButton>
+        <Link key={i} href={o.path} target="_blank">
+          <IconButton
+            sx={{
+              color: iconColor,
+              width: {
+                xs: "30px",
+                lg: "40px",
+              },
+              height: {
+                xs: "30px",
+                lg: "40px",
+              },
+              border: "1px solid #ffffff80",
+              transition: ".5s",
+              "&:hover": {
+                backgroundColor: colorConfig.primary,
+                border: "none",
+              },
+            }}
+          >
+            {" "}
+            <o.icon size={16} />
+          </IconButton>
+        </Link>
       ))}
     </div>
   );

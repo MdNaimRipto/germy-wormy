@@ -65,6 +65,10 @@
   animation: spinRocket 5s linear infinite;
 }
 
+.rocket-earth {
+  animation: spinRocket 55s linear infinite;
+}
+
 .css-1808mag-MuiPaper-root-MuiAccordion-root.Mui-expanded {
   margin: 0 !important;
 }

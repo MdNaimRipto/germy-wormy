@@ -31,7 +31,7 @@ const Buy = () => {
   ];
   return (
     <OnScrollAnimation>
-      <div className="container relative z-20 py-20 px-4">
+      <div className="container relative z-20 py-20 px-4" id="how-to-buy">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="hidden lg:block w-full h-full overflow-hidden">
             <Image

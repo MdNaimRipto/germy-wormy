@@ -1,9 +1,10 @@
 import React from "react";
 import OpacityTransition from "../animation/OpacityTransition";
-import banner from "@/assets/banner.jpg";
+import banner from "@/assets/web-bg.jpg";
 import Image from "next/image";
 import rocket from "@/assets/rocket-germ.png";
 import moon from "@/assets/moon.png";
+import earth from "@/assets/earth.png";
 
 const Banner = () => {
   return (
@@ -24,7 +25,7 @@ const Banner = () => {
             width={rocket.width}
             height={rocket.height}
             priority
-            className="w-full h-auto object-contain absolute -left-24 md:-left-64 bottom-10 -rotate-45 md:-rotate-[30deg] z-0 md:brightness-50 lg:hidden"
+            className="w-full md:w-2/5 h-auto object-contain absolute left-0 md:left-64 bottom-64 -rotate-[36deg] md:-rotate-[20deg] z-0 brightness-50 lg:hidden"
           />
           <Image
             src={moon.src}
@@ -32,7 +33,7 @@ const Banner = () => {
             width={moon.width}
             height={moon.height}
             priority
-            className="w-3/5 h-auto object-contain absolute -right-16 md:-right-36 top-10 z-0 md:brightness-90 lg:hidden"
+            className="w-3/5 md:w-2/5 h-auto object-contain absolute -right-16 md:-right-36 top-10 z-0 md:brightness-90 lg:hidden"
           />
           <div className="w-full px-4 relative z-10">
             <h2 className="text-center lg:text-start text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[40px] md:leading-[50px] lg:leading-[65px] xl:leading-[80px] text-white font-bold">
@@ -69,6 +70,14 @@ const Banner = () => {
               className="w-3/5 h-3/5 object-contain absolute right-0 top-0 z-0"
             />
           </div>
+          <Image
+            src={earth.src}
+            alt="earth"
+            width={earth.width}
+            height={earth.height}
+            priority
+            className="object-contain absolute -left-[200px] bottom-8 -z-10 brightness-50 rocket-earth"
+          />
         </div>
       </OpacityTransition>
     </div>

@@ -18,30 +18,30 @@ const SocialLinks = ({
   const socialLinks = [
     {
       icon: FaXTwitter,
-      path: "",
+      path: "https://x.com/thegermywormy",
     },
     {
       icon: FaInstagram,
-      path: "",
+      path: "https://www.instagram.com/thegermywormy/",
     },
     {
       icon: FaDiscord,
-      path: "",
+      path: "https://discord.com/channels/1317237924374249543/1317237925427024055",
     },
     {
       icon: FaFacebookF,
-      path: "",
+      path: "https://www.facebook.com/GermyWormy",
     },
     {
       icon: FaTiktok,
-      path: "",
+      path: "https://www.tiktok.com/@thegermywormy",
     },
   ];
 
   return (
     <div className="flex items-center gap-4">
       {socialLinks.map((s, i) => (
-        <Link key={i} href={s.path}>
+        <Link key={i} href={s.path} target="_blank">
           <s.icon className="rounded-full bg-white p-2 text-4xl text-primary" />
         </Link>
       ))}

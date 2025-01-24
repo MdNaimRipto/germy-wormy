@@ -23,32 +23,27 @@ const NavMenuItems = ({
   const menuItems = [
     {
       item: "Home",
-      path: "/",
+      path: "",
       opacityDelay: ".4s",
     },
     {
-      item: "About",
-      path: "",
-      opacityDelay: ".7s",
-    },
-    {
       item: "Tokenomics",
-      path: "",
+      path: "#tokenomics",
       opacityDelay: ".5s",
     },
     {
       item: "How to Buy",
-      path: "",
+      path: "#how-to-buy",
       opacityDelay: ".6s",
     },
     {
       item: "FAQ",
-      path: "",
+      path: "#faq",
       opacityDelay: ".7s",
     },
     {
       item: "Connect",
-      path: "",
+      path: "#connect",
       opacityDelay: ".8s",
     },
   ];

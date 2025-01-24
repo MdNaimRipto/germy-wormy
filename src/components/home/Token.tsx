@@ -10,7 +10,10 @@ const Token = () => {
     { title: "Token Address", value: "Token Address" },
   ];
   return (
-    <div className="customLeftRightPadding relative z-20 text-center bg-white">
+    <div
+      className="customLeftRightPadding relative z-20 text-center bg-white"
+      id="tokenomics"
+    >
       <OnScrollAnimation>
         <div className="container flex flex-col gap-6 py-20">
           <h3 className="titleFont capitalize text-center text-primary text-3xl md:text-4xl font-semibold tracking-wider">
