@@ -10,7 +10,7 @@ const FooterLogo = () => {
       </div>
 
       <h2 className="text-base font-semibold titleFont">
-        © Germy Wormy inc2025.
+        © Germy Wormy inc 2025.
       </h2>
       <hr className="w-full text-[#ffffff33] md:hidden mt-6" />
     </div>
