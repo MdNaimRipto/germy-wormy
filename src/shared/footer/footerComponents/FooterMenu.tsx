@@ -4,27 +4,23 @@ const FooterMenu = () => {
   const menuData = [
     {
       title: "Home",
-      link: "/",
-    },
-    {
-      title: "About",
       link: "",
     },
     {
       title: "Tokenomics",
-      link: "",
+      link: "#tokenomics",
     },
     {
       title: "How to Buy",
-      link: "",
+      link: "#how-to-buy",
     },
     {
       title: "FAQ",
-      link: "",
+      link: "#faq",
     },
     {
       title: "Connect",
-      link: "",
+      link: "#connect",
     },
   ];
   return (
