@@ -7,7 +7,10 @@ const Token = () => {
     { title: "Token Name", value: "Germy Wormy" },
     { title: "Token Symbol", value: "GERM" },
     { title: "Total Supply", value: "23,000,000 Germy Wormy Tokens" },
-    { title: "Token Address", value: "Token Address" },
+    {
+      title: "Token Address",
+      value: "CuMVNbCNwfwj8TrRsSAUM23nK6ic4xCDMCN4cucNmv7s",
+    },
   ];
   return (
     <div
